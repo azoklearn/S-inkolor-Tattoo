@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inkolor Tattoo - Artiste Tatoueur Professionnel</title>
+    <meta name="description" content="S'inkolor Tattoo - Artiste tatoueur professionnel. Découvrez mes créations uniques et réservez votre séance de tatouage.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>S'inkolor</h2>
+                <span>Tattoo</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">S'inkolor Tattoo</h1>
+            <p class="hero-subtitle">Artiste Tatoueur Professionnel</p>
+            <p class="hero-description">⛩️ Manga ~ Disney ~ Pop Culture<br>📍 Nancy • 📆 Agenda Décembre/Janvier ouvert<br>⏳ Réponse dans les 24h</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">Voir mes créations</a>
+                <a href="#contact" class="btn btn-secondary">Prendre rendez-vous</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="tattoo-preview">
+                <i class="fas fa-palette"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>À propos de S'inkolor</h2>
+                    <p>Passionné par l'art du tatouage et spécialisé dans les univers <strong>Manga, Disney et Pop Culture</strong>, je crée des œuvres uniques qui reflètent votre personnalité. Chaque projet est une collaboration artistique où vos idées prennent vie sous forme de tatouages durables et esthétiques.</p>
+                    <p>Basé à <strong>Nancy</strong>, je m'adapte à vos envies pour créer des pièces qui vous ressemblent et vous accompagnent tout au long de votre vie. Mon agenda est ouvert pour <strong>Décembre et Janvier</strong> !</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>200+</h3>
+                            <p>Tatouages réalisés</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfaction client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="S'inkolor - Artiste Tatoueur" class="about-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Découvrez quelques-unes de mes créations</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="manga">Manga</button>
+                <button class="filter-btn" data-filter="disney">Disney</button>
+                <button class="filter-btn" data-filter="pop">Pop Culture</button>
+                <button class="filter-btn" data-filter="realism">Réalisme</button>
+                <button class="filter-btn" data-filter="abstract">Abstrait</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Manga -->
+                <div class="portfolio-item" data-category="manga">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Manga" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Manga</h3>
+                        <p>Personnages de manga</p>
+                        <a href="https://www.instagram.com/p/DL-edunCduU/?img_index=1" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Disney -->
+                <div class="portfolio-item" data-category="disney">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Disney" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Disney</h3>
+                        <p>Personnages Disney</p>
+                        <a href="https://www.instagram.com/p/C45UEcsiPzE/" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pop Culture -->
+                <div class="portfolio-item" data-category="pop">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Pop Culture" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Pop Culture</h3>
+                        <p>Références pop</p>
+                        <a href="https://www.instagram.com/p/DAbUnLJC6Jk/?img_index=1" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Réalisme -->
+                <div class="portfolio-item" data-category="realism">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Réalisme" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Réalisme</h3>
+                        <p>Portraits réalistes</p>
+                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Style Mixte -->
+                <div class="portfolio-item" data-category="all">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Style Mixte" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Style Mixte</h3>
+                        <p>Créations uniques</p>
+                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Art Abstrait -->
+                <div class="portfolio-item" data-category="abstract">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Art Abstrait" loading="lazy">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Art Abstrait</h3>
+                        <p>Designs créatifs</p>
+                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                            <i class="fab fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-cta">
+                <p>Pour voir plus de mes créations, suivez-moi sur Instagram</p>
+                <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="btn btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                    @sinkolor.tattoo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">Ce que je peux faire pour vous</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Conception personnalisée</h3>
+                    <p>Je crée des designs uniques adaptés à vos envies et à votre personnalité. Chaque tatouage est une œuvre originale.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Spécialités</h3>
+                    <p>Manga, Disney, Pop Culture... Je me spécialise dans vos univers favoris pour créer des tatouages qui vous ressemblent.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Hygiène & Sécurité</h3>
+                    <p>Respect strict des normes d'hygiène et de sécurité. Matériel stérilisé et environnement professionnel.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conseil personnalisé</h3>
+                    <p>Je vous accompagne dans le choix du design, de la taille et de l'emplacement pour un résultat optimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Parlons de votre projet</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank">@sinkolor.tattoo</a><br>🤝🏻 Sponsor @hand_ink_</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localisation</h3>
+                            <p>Nancy, France<br>📍</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Disponibilité</h3>
+                            <p>📆 Agenda Décembre/Janvier ouvert<br>⏳ Réponse dans les 24h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Demander un devis</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet de tatouage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>S'inkolor Tattoo</h3>
+                    <p>Artiste Tatoueur Professionnel</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 S'inkolor Tattoo. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
