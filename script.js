@@ -385,3 +385,86 @@ const debouncedScrollHandler = debounce(() => {
 }, 10);
 
 window.addEventListener('scroll', debouncedScrollHandler);
+
+// ============================
+// Flash (localStorage) — lecture + filtre
+// ============================
+const FLASH_KEY = 'flashItems';
+
+function readFlashItems(){
+    try{
+        const raw = localStorage.getItem(FLASH_KEY);
+        if(!raw){ return []; }
+        const arr = JSON.parse(raw);
+        return Array.isArray(arr) ? arr : [];
+    }catch(e){
+        console.error('Erreur de lecture flashItems', e);
+        return [];
+    }
+}
+
+function renderFlashList(items){
+    const grid = document.getElementById('flash-grid');
+    const tpl = document.getElementById('flash-card-template');
+    if(!grid || !tpl) return;
+    grid.innerHTML = '';
+    if(!items || items.length === 0){
+        const empty = document.createElement('div');
+        empty.className = 'flash-empty';
+        empty.textContent = 'Aucun flash pour le moment. Ajoutez-en via la page Admin.';
+        grid.appendChild(empty);
+        return;
+    }
+    items.forEach(item => {
+        const node = tpl.content.cloneNode(true);
+        const img = node.querySelector('.flash-img');
+        const cap = node.querySelector('.flash-caption');
+        img.src = item.imageData || 'https://placehold.co/600x600?text=Flash';
+        img.alt = item.title || 'Tatouage flash';
+        cap.textContent = item.title || '';
+        grid.appendChild(node);
+    });
+}
+
+function initFlash(){
+    const search = document.getElementById('flash-search');
+    const clear = document.getElementById('flash-clear');
+    // Seed initial si vide (une seule fois)
+    let items = readFlashItems();
+    try{
+        const seeded = localStorage.getItem('flashSeeded');
+        if((!items || items.length === 0) && !seeded){
+            items = [
+                { id: 'seed1', title: "Flash Manga #1", tags: ['manga','couleur'], imageData: 'https://placehold.co/800x800?text=Flash+Manga+1' },
+                { id: 'seed2', title: "Flash Anime #2", tags: ['anime','line'], imageData: 'https://placehold.co/800x800?text=Flash+Anime+2' },
+                { id: 'seed3', title: "Pop Culture #3", tags: ['pop','culture'], imageData: 'https://placehold.co/800x800?text=Pop+Culture+3' }
+            ];
+            localStorage.setItem(FLASH_KEY, JSON.stringify(items));
+            localStorage.setItem('flashSeeded', '1');
+        }
+    }catch(e){ console.warn('Seed flash ignoré:', e); }
+    renderFlashList(items);
+
+    function applyFilter(){
+        const q = (search?.value || '').toLowerCase().trim();
+        if(!q){ renderFlashList(items); return; }
+        const filtered = items.filter(x => {
+            const bucket = [x.title, ...(x.tags || [])].join(' ').toLowerCase();
+            return bucket.includes(q);
+        });
+        renderFlashList(filtered);
+    }
+
+    search?.addEventListener('input', applyFilter);
+    clear?.addEventListener('click', () => { if(search){ search.value=''; } applyFilter(); });
+    window.addEventListener('storage', (ev) => {
+        if(ev.key === FLASH_KEY){
+            items = readFlashItems();
+            applyFilter();
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initFlash();
+});

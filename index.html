@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'inkolor Tattoo - Artiste Tatoueur Professionnel</title>
-    <meta name="description" content="S'inkolor Tattoo - Artiste tatoueur professionnel. Découvrez mes créations uniques et réservez votre séance de tatouage.">
+    <title>Les Tatouables - Artiste Tatoueur Professionnel</title>
+    <meta name="description" content="Les Tatouables - Artiste tatoueur professionnel. Découvrez mes créations uniques et réservez votre séance de tatouage.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,13 +14,14 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>S'inkolor</h2>
-                <span>Tattoo</span>
+                <h2>Les Tatouables</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#s'inkolor" class="nav-link">À propos de S'inkolor</a></li>
+                <li><a href="#ldermo" class="nav-link">À propos de LDermo</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#flash" class="nav-link">Flash</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -34,29 +35,82 @@
     <!-- Hero Section -->
     <section id="accueil" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">S'inkolor Tattoo</h1>
-            <p class="hero-subtitle">Artiste Tatoueur Professionnel</p>
-            <p class="hero-description">⛩️ Manga ~ Disney ~ Pop Culture<br>📍 Nancy • 📆 Agenda Décembre/Janvier ouvert<br>⏳ Réponse dans les 24h</p>
+            <h1 class="hero-title">Les Tatouables</h1>
+            <p class="hero-subtitle">Salon De Tatoueurs Professionnels</p>
             <div class="hero-buttons">
-                <a href="#portfolio" class="btn btn-primary">Voir mes créations</a>
+                <a href="#portfolio" class="btn btn-primary">Voir nos créations</a>
                 <a href="#contact" class="btn btn-secondary">Prendre rendez-vous</a>
             </div>
         </div>
         <div class="hero-image">
             <div class="tattoo-preview">
-                <i class="fas fa-palette"></i>
+                <img src="images/logo.png" alt="Les Tatouables - Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="tatoueurs" class="artists">
+        <div class="container">
+            <h2 class="section-title">Nos tatoueurs</h2>
+            <p class="section-subtitle">Deux expertises complémentaires</p>
+            <div class="artists-grid">
+                <article class="artist-card">
+                    <div class="artist-info">
+                        <h3>S'inkolor</h3>
+                        <p>Spécialiste manga, anime et pop culture. Lignes précises, couleurs vibrantes et compositions dynamiques.</p>
+                    </div>
+                </article>
+                <article class="artist-card">
+                    <div class="artist-info">
+                        <h3>LDermo</h3>
+                        <p>Dermopigmentation réparatrice et correctrice. Approche douce, résultats naturels et techniques avancées.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos de LDermo -->
+    <section id="ldermo" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/ldermo.jpeg" alt="LDermo - Dermopigmentation" class="about-photo">
+                </div>
+                <div class="about-text">
+                    <h2>À propos de LDermo</h2>
+                    <p>Spécialisée en <strong>dermopigmentation réparatrice et correctrice</strong> (aréoles mammaires, cicatrices, vitiligo, densification capillaire), LDermo accompagne chaque personne avec une approche douce et personnalisée.</p>
+                    <p>Objectif: des <strong>résultats naturels et harmonieux</strong>, grâce à des techniques avancées, un protocole d’hygiène irréprochable et une écoute attentive.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Années d'expérience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>300+</h3>
+                            <p>Interventions réalisées</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Satisfaction client</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:1rem; display:inline-block;">Prendre contact</a>
+                    <a href="#portfolio-ldermo" class="btn btn-secondary" style="margin-top:1rem; display:inline-block; margin-left:0.5rem;">Voir le portfolio</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="s'inkolor"class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>À propos de S'inkolor</h2>
                     <p>Passionné par l'art du tatouage et spécialisé dans les univers <strong>Manga, Disney et Pop Culture</strong>, je crée des œuvres uniques qui reflètent votre personnalité. Chaque projet est une collaboration artistique où vos idées prennent vie sous forme de tatouages durables et esthétiques.</p>
-                    <p>Basé à <strong>Nancy</strong>, je m'adapte à vos envies pour créer des pièces qui vous ressemblent et vous accompagnent tout au long de votre vie. Mon agenda est ouvert pour <strong>Décembre et Janvier</strong> !</p>
+                    <p>Basé à <strong>Toul</strong>, je m'adapte à vos envies pour créer des pièces qui vous ressemblent et vous accompagnent tout au long de votre vie. Mon agenda est ouvert pour <strong>Décembre et Janvier</strong> !</p>
                     <div class="about-stats">
                         <div class="stat">
                             <h3>5+</h3>
@@ -71,10 +125,40 @@
                             <p>Satisfaction client</p>
                         </div>
                     </div>
+                    <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="btn btn-instagram" style="margin-top:1rem; display:inline-block;">
+                        <i class="fab fa-instagram"></i> @sinkolor.tattoo
+                    </a>
+                    <a href="#portfolio-sinkolor" class="btn btn-secondary" style="margin-top:1rem; display:inline-block; margin-left:0.5rem;">Voir le portfolio</a>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:1rem; display:inline-block; margin-left:0.5rem;">Prendre contact</a>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="S'inkolor - Artiste Tatoueur" class="about-photo">
+                    <img src="images/sinkolor.jpeg" alt="S'inkolor - Artiste Tatoueur" class="about-photo">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Section -->
+    <section id="flash" class="flash">
+        <div class="container">
+            <h2 class="section-title">Tattoos Flash</h2>
+            <p class="section-subtitle">Disponibles dès maintenant.</p>
+            <div class="flash-grid">
+                <figure class="flash-item">
+                    <img class="flash-img" src="images/flash1.jpeg" alt="Tatouage flash 1">
+                    <figcaption class="flash-caption">Flash 1</figcaption>
+                    <a class="btn btn-primary flash-cta" href="#contact">Réserver</a>
+                </figure>
+                <figure class="flash-item">
+                    <img class="flash-img" src="images/flash2.jpeg" alt="Tatouage flash 2">
+                    <figcaption class="flash-caption">Flash 2</figcaption>
+                    <a class="btn btn-primary flash-cta" href="#contact">Réserver</a>
+                </figure>
+                <figure class="flash-item">
+                    <img class="flash-img" src="images/flash3.jpeg" alt="Tatouage flash 3">
+                    <figcaption class="flash-caption">Flash 3</figcaption>
+                    <a class="btn btn-primary flash-cta" href="#contact">Réserver</a>
+                </figure>
             </div>
         </div>
     </section>
@@ -83,109 +167,142 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">Découvrez quelques-unes de mes créations</p>
+            <p class="section-subtitle">Découvrez les créations de S'inkolor et LDermo</p>
             
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="manga">Manga</button>
-                <button class="filter-btn" data-filter="disney">Disney</button>
-                <button class="filter-btn" data-filter="pop">Pop Culture</button>
-                <button class="filter-btn" data-filter="realism">Réalisme</button>
-                <button class="filter-btn" data-filter="abstract">Abstrait</button>
+            <!-- S'inkolor -->
+            <div id="portfolio-sinkolor" class="portfolio-section">
+                <h3 class="section-subtitle" style="margin-top:1rem">S'inkolor</h3>
+                <div class="portfolio-grid">
+                    <!-- Manga -->
+                    <div class="portfolio-item" data-category="manga">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Manga" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Manga</h3>
+                            <p>Personnages de manga</p>
+                            <a href="https://www.instagram.com/p/DL-edunCduU/?img_index=1" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Disney -->
+                    <div class="portfolio-item" data-category="disney">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Disney" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Disney</h3>
+                            <p>Personnages Disney</p>
+                            <a href="https://www.instagram.com/p/C45UEcsiPzE/" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pop Culture -->
+                    <div class="portfolio-item" data-category="pop">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Pop Culture" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Pop Culture</h3>
+                            <p>Références pop</p>
+                            <a href="https://www.instagram.com/p/DAbUnLJC6Jk/?img_index=1" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Réalisme -->
+                    <div class="portfolio-item" data-category="realism">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Réalisme" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Réalisme</h3>
+                            <p>Portraits réalistes</p>
+                            <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Style Mixte -->
+                    <div class="portfolio-item" data-category="all">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Style Mixte" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Style Mixte</h3>
+                            <p>Créations uniques</p>
+                            <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Art Abstrait -->
+                    <div class="portfolio-item" data-category="abstract">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Art Abstrait" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Art Abstrait</h3>
+                            <p>Designs créatifs</p>
+                            <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
+                                <i class="fab fa-instagram"></i> Voir sur Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-cta">
+                    
+                </div>
             </div>
 
-            <div class="portfolio-grid">
-                <!-- Manga -->
-                <div class="portfolio-item" data-category="manga">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Manga" loading="lazy">
+            <!-- LDermo -->
+            <div id="portfolio-ldermo" class="portfolio-section">
+                <h3 class="section-subtitle" style="margin-top:2rem">LDermo</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="dermo">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&h=400&fit=crop&crop=faces" alt="Dermopigmentation aréole 3D" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Aréole 3D</h3>
+                            <p>Dermopigmentation réparatrice</p>
+                            <a href="#contact" class="portfolio-link"><i class="fas fa-envelope"></i> Demander infos</a>
+                        </div>
                     </div>
-                    <div class="portfolio-overlay">
-                        <h3>Manga</h3>
-                        <p>Personnages de manga</p>
-                        <a href="https://www.instagram.com/p/DL-edunCduU/?img_index=1" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
+                    <div class="portfolio-item" data-category="dermo">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=400&fit=crop&crop=faces" alt="Camouflage cicatrice" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Camouflage cicatrice</h3>
+                            <p>Résultat naturel</p>
+                            <a href="#contact" class="portfolio-link"><i class="fas fa-envelope"></i> Demander infos</a>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Disney -->
-                <div class="portfolio-item" data-category="disney">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Disney" loading="lazy">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Disney</h3>
-                        <p>Personnages Disney</p>
-                        <a href="https://www.instagram.com/p/C45UEcsiPzE/" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Pop Culture -->
-                <div class="portfolio-item" data-category="pop">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Pop Culture" loading="lazy">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Pop Culture</h3>
-                        <p>Références pop</p>
-                        <a href="https://www.instagram.com/p/DAbUnLJC6Jk/?img_index=1" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
+                    <div class="portfolio-item" data-category="dermo">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?w=400&h=400&fit=crop&crop=faces" alt="Vitiligo pigmentation" loading="lazy">
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h3>Vitiligo</h3>
+                            <p>Harmonisation des teintes</p>
+                            <a href="#contact" class="portfolio-link"><i class="fas fa-envelope"></i> Demander infos</a>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Réalisme -->
-                <div class="portfolio-item" data-category="realism">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=face" alt="Tatouage Réalisme" loading="lazy">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Réalisme</h3>
-                        <p>Portraits réalistes</p>
-                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Style Mixte -->
-                <div class="portfolio-item" data-category="all">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop&crop=face" alt="Tatouage Style Mixte" loading="lazy">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Style Mixte</h3>
-                        <p>Créations uniques</p>
-                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Art Abstrait -->
-                <div class="portfolio-item" data-category="abstract">
-                    <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=400&h=400&fit=crop&crop=face" alt="Tatouage Art Abstrait" loading="lazy">
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Art Abstrait</h3>
-                        <p>Designs créatifs</p>
-                        <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="portfolio-link">
-                            <i class="fab fa-instagram"></i> Voir sur Instagram
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="portfolio-cta">
-                <p>Pour voir plus de mes créations, suivez-moi sur Instagram</p>
-                <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="btn btn-instagram">
-                    <i class="fab fa-instagram"></i>
-                    @sinkolor.tattoo
-                </a>
+                <div class="portfolio-cta">
+                    <p>Pour une prise en charge LDermo, contactez-nous</p>
+                    <a href="#contact" class="btn btn-primary">Prendre contact</a>
+                </div>
             </div>
         </div>
     </section>
@@ -239,6 +356,15 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p><a href="tel:0602120638">0602120638</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="contact-details">
@@ -252,7 +378,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Localisation</h3>
-                            <p>Nancy, France<br>📍</p>
+                            <p>Toul, France<br>📍</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -268,7 +394,10 @@
                 
                 <div class="contact-form">
                     <h3>Demander un devis</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" method="POST" action="https://formsubmit.co/lestatouables@gmail.com">
+                        <input type="hidden" name="_subject" value="Nouvelle demande de rendez-vous - Les Tatouables">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         </div>
@@ -279,6 +408,7 @@
                             <textarea id="message" name="message" placeholder="Décrivez votre projet de tatouage" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                        <input type="hidden" name="_next" value="/merci.html">
                     </form>
                 </div>
             </div>
@@ -290,8 +420,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>S'inkolor Tattoo</h3>
-                    <p>Artiste Tatoueur Professionnel</p>
+                    <h3>Les Tatouables</h3>
+                    <p>Salon de  Tatoueurs Professionnels</p>
                 </div>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/sinkolor.tattoo/" target="_blank" class="social-link">
@@ -300,11 +430,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 S'inkolor Tattoo. Tous droits réservés.</p>
+                <p>&copy; 2024 Les Tatouables . Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
